@@ -3,13 +3,14 @@
 0-rain
 """
 
+
 def rain(walls):
     """
     Calculate how much rainwater will be retained.
-    
+
     Args:
         walls (list): List of non-negative integers representing wall heights.
-        
+
     Returns:
         int: Total units of rainwater retained.
     """
@@ -31,4 +32,3 @@ def rain(walls):
             water += max(0, right_max - walls[right])
 
     return water
-
